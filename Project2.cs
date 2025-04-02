@@ -13,7 +13,7 @@ class Program2{
 
     int guess = 0;
     int attempt = 0;
-    int macAttempt = 25;
+    int maxAttempt = 25;
 
     while(guess != secretNumber && attempt < macAttempt)
     {
@@ -48,7 +48,7 @@ class Program2{
             Console.WriteLine("Invalid input !!");
         }
     }
-    if(attempt >= macAttempt && guess != secretNumber)
+    if(attempt >= maxAttempt && guess != secretNumber)
     {
         Console.WriteLine($"You have used  your max attempts and the correct number was {secretNumber}");
     }
