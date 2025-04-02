@@ -15,7 +15,7 @@ class Program2{
     int attempt = 0;
     int maxAttempt = 25;
 
-    while(guess != secretNumber && attempt < macAttempt)
+    while(guess != secretNumber && attempt < maxAttempt)
     {
         Console.WriteLine("Enter your guess");
         string input = Console.ReadLine();
