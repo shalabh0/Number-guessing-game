@@ -23,6 +23,14 @@ class Program2{
         if(int.TryParse(input, out guess))
         {
             attempt++;
+             if(guess > secretNumber)
+            {
+                Console.WriteLine("Your guess is too high");
+            } 
+               if(guess < secretNumber)
+            {
+                Console.WriteLine("Your guess is too low");
+            } 
             if(Math.Abs(guess - secretNumber)>20)
             {
                 Console.WriteLine("You are way off the answer");
